@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Nametag
+Plugin Name: NameTag
 Plugin URI: http://marketingtechblog.com/projects/nametag/
 Description: A plugin for integrating <a href="http://affiliates.my-vbtools.com/idevaffiliate.php?id=102" target="_blank">NameTag</a> with your WordPress blog.
-Version: 1.0.0
+Version: 1.0.2
 Author: Douglas Karr
 Author URI: http://www.dknewmedia.com/
 */

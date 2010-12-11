@@ -2,7 +2,7 @@
 /*
 Author: Douglas Karr
 Author URI: http://www.dknewmedia.com
-Description: Visual Blaze Nametag
+Description: Visual Blaze NameTag
 */
 
 $url_admin = get_option('siteurl') . '/wp-admin/admin.php?page=nametag/admin.php'; 
