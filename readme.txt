@@ -3,7 +3,7 @@ Contributors: douglaskarr
 Tags: nametag, b2b, leads, ip, tracking, business, analytics
 Requires at least: 2.7.0
 Tested up to: 3.0.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 A plugin to integrate NameTag with your WordPress blog to identify businesses that are visiting you.
 
@@ -35,11 +35,13 @@ No.  There's no substitute for the incredible reporting in the NameTag interface
 
 == Changelog ==
 
+= 1.0.1 =
+* Some cleanup
+
 = 1.0.0 =
 * Launch
 
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
 
