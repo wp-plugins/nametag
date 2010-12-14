@@ -45,7 +45,9 @@ $dknt_pluginurl = $site_url."/wp-admin/options-general.php?page=nametag/nametag.
                     <script id="page" language="javascript" type="text/javascript">
                     $.post(ajaxurl, { action: "dknt_getpage" }, function(response) {
 							$("#pagedata").html(response).fadeIn();
-					}, "text");
+							$("#nametag p").hide(); 
+							$("#nametag a.show").click(function() { $(this).next("#nametag p").slideToggle('normal'); return false; });
+					}, "text");					
                     </script>
                 	<?php } ?>
                 </div>

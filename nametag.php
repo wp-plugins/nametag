@@ -3,7 +3,7 @@
 Plugin Name: NameTag
 Plugin URI: http://marketingtechblog.com/projects/nametag/
 Description: A plugin for integrating <a href="http://affiliates.my-vbtools.com/idevaffiliate.php?id=102" target="_blank">NameTag</a> with your WordPress blog.
-Version: 1.0.2
+Version: 1.0.3
 Author: Douglas Karr
 Author URI: http://www.dknewmedia.com/
 */
@@ -71,25 +71,26 @@ function dknt_getpage() {
 	
 	$array = $obj['history'];
 
-	echo "<ol>";
+	echo "<ol id=\"nametag\">";
 	foreach ($array as $key => $value) {
-		echo "<li><strong>Company:</strong> ";
-		echo $value['company'];
-		echo "<br /><strong>Address:</strong> ".$value['company_address'];
-		echo "<br /><strong>Referred From:</strong> <a href=\"".$value['referrer']."\" title=\"".$value['referrer']."\" target=\"_blank\">Link</a>";
+		echo "<li><a href=\"#\" class=\"show\">".$value['company']."</a>";
+		echo "<p>";
+		echo "<strong>Visited:</strong> ".$value['time']."<br />";
+		echo "<strong>Address:</strong> ".$value['company_address']."<br />";
+		echo "<strong>Referred From:</strong> <a href=\"".$value['referrer']."\" title=\"".$value['referrer']."\" target=\"_blank\">Link</a><br />";
 		if($value['keywords']) {
-			echo "<br /><strong>Keywords:</strong> <span style=\"background:yellow\">";
+			echo "<strong>Keywords:</strong> <span style=\"background:yellow\">";
 			echo $value['keywords'];
-			echo "</span>";
+			echo "</span><br />";
 		}
-		echo "<br /><strong>Pages Visited:</strong> ";
+		echo "<strong>Pages Visited:</strong> ";
 		$i = 1;
 		$array2 = $value['pages'];
 		foreach ($array2 as $key2 => $value2) {
 			echo "<a href=\"".$value2."\" title=\"".$value2."\" target=\"_blank\">".$i."</a> ";
 			$i = $i + 1;
 		}
-		echo "</li>";
+		echo "</p></li>";
 	}
 	echo "</ol>";
 	
