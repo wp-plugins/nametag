@@ -13,12 +13,12 @@ NameTag provides a business look-up for visitors' IP addresses and tracks those 
 
 This NameTag WordPress plugin allows NameTag customers to:
 *  Automatically add the necessary JavaScript to their WordPress footer for tracking
-*  With an API Key entered, allows users to view their NameTag data in a WordPress dashboard.
+*  With an API Key entered, allows users to view the latest 25 Companies who have visited their WordPress site.
 
 == Installation ==
 
 1. You MUST have an active NameTag account in order to use the plugin
-1. Upload the `webtrends` folder to the `/wp-content/plugins/` directory
+1. Upload the `nametag` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to `Settings/NameTag` and enter your NameTag credentials
 
