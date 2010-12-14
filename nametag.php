@@ -3,7 +3,7 @@
 Plugin Name: NameTag
 Plugin URI: http://marketingtechblog.com/projects/nametag/
 Description: A plugin for integrating <a href="http://affiliates.my-vbtools.com/idevaffiliate.php?id=102" target="_blank">NameTag</a> with your WordPress blog.
-Version: 1.0.3
+Version: 1.0.4
 Author: Douglas Karr
 Author URI: http://www.dknewmedia.com/
 */
@@ -35,7 +35,9 @@ function dknt_addnametag_page() {
 }
 
 function dknt_code() {
-	echo stripslashes(get_option('dknt_tracking'))."\n";
+	$dknt_tracking = get_option('dknt_tracking');
+	$dknt_tracking = stripslashes($dknt_tracking);
+	echo stripslashes($dknt_tracking)."\n";
 }
 
 function dkntRequest($apikey, $url) {
